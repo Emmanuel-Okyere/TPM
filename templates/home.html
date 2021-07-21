@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    
+    <title>Ghana Identification Authority</title>
+
+    
+    <link href="/static/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/static/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="/static/select2.min.css" rel="stylesheet" media="all">
+    <link href="/static/styles.css" rel="stylesheet" media="all">
+</head>
+
+<body class="light img js-fullheight" style="background-image: url(/static/gh01.png);" >
+    
+    <div>
+        <div class="wrapper wrapper--w680">
+            
+            <div class="card card-4">
+                <div class="row row-space row justify-content-center">
+                    <div class="col-5">
+                        <div id="code" class="breadcrumb-item active">
+                            <a href="/"><i class="fas fa-home"></i>HOME</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div id="code" class="breadcrumb-item active">
+                            <a href="/get-data/1"><i class="fas fa-vote-yea"></i>Birth and Death Registry</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div id="code" class="breadcrumb-item active">
+                            <a href="/get-data/2"><i class="fas fa-vote-yea"></i>Electoral Commision</a>
+                        </div>
+                    </div>
+                    <div id="code" class="col-5">
+                        <div class="breadcrumb-item active">
+                            <a href="/get-data/3"><i class="fas fa-vote-yea"></i>Ghana Immigration Service</a>
+                        </div>
+                    </div>
+                    <div id="code" class="col-1">
+                        <div class="breadcrumb-item active">
+                            <a href="/get-data/4"><i class="fas fa-vote-yea"></i>National Health Insurance Scheme</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bod" class="card-body">
+                    <h2 class="title" style="align-content: center; color: black;">Ghana Identification Authority Registration</h2>
+                    <p class="text-center" style="text-align: center; color: red;">{{message}}</p>
+                    <form method="post" action="/all">
+                        <div class="input-group">
+                            <label for="db" class="label" style=" color: black;">Select Database</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select class="subject" name="db" id="db">
+                                    <option value="postgres">Birth and Death Registry</option>
+                                    <option value="mariadb">Ghana Immigration Service</option>
+                                    <option value="mysql">Electoral Commision</option>
+                                    <option value="msserver">National Health Insurance Scheme</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div >
+                            <div >
+                                <div class="input-group">
+                                    <label for="username" class="label" style=" color: black;">Username</label>
+                                    <input class="input--style-4" type="text" name="username" id="firstname" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div >
+                                <div class="input-group">
+                                    <label for="exampleInputEmail1" class="label" style=" color: black;">Email</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4"type="email" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div >
+                                <div class="input-group">
+                                    <label for="exampleInputPassword1" class="label" style=" color: black;">Password</label>
+                                    <input class="input--style-4" type="password" name="password" id="exampleInputPassword1" required>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="p-t-15">
+                            <button id="but" class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/select2.min.js"></script>
+    <script src="/static/global.js"></script>
+
+</body>
+
+</html>
